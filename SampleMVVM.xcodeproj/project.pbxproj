@@ -16,6 +16,7 @@
 		3C39D1BB29ED908100AEE4FF /* SampleMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39D1BA29ED908100AEE4FF /* SampleMVVMTests.swift */; };
 		3C39D1C529ED908100AEE4FF /* SampleMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39D1C429ED908100AEE4FF /* SampleMVVMUITests.swift */; };
 		3C39D1C729ED908100AEE4FF /* SampleMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39D1C629ED908100AEE4FF /* SampleMVVMUITestsLaunchTests.swift */; };
+		3C39D1D429ED9B8A00AEE4FF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39D1D329ED9B8A00AEE4FF /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3C39D1C029ED908100AEE4FF /* SampleMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C39D1C429ED908100AEE4FF /* SampleMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMVVMUITests.swift; sourceTree = "<group>"; };
 		3C39D1C629ED908100AEE4FF /* SampleMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C39D1D329ED9B8A00AEE4FF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3C39D1AC29ED908100AEE4FF /* Assets.xcassets */,
 				3C39D1AE29ED908100AEE4FF /* LaunchScreen.storyboard */,
 				3C39D1B129ED908100AEE4FF /* Info.plist */,
+				3C39D1D329ED9B8A00AEE4FF /* ViewModel.swift */,
 			);
 			path = SampleMVVM;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				3C39D1A829ED907F00AEE4FF /* ViewController.swift in Sources */,
 				3C39D1A429ED907F00AEE4FF /* AppDelegate.swift in Sources */,
+				3C39D1D429ED9B8A00AEE4FF /* ViewModel.swift in Sources */,
 				3C39D1A629ED907F00AEE4FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
