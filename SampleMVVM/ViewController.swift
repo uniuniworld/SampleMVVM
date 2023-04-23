@@ -12,27 +12,30 @@ final class ViewController: UIViewController {
     
     private let viewModel = ViewModel()
     private var cancellables = Set<AnyCancellable>()
-
+    
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        bind()
     }
     
+    @IBAction func tapButton(_ sender: Any) {
+        viewModel.tapButton()
+    }
     
     func bind() {
         viewModel.isValid
             .sink { [weak self] isValid in
-                if isValid {
-                    self?.errorLabel.isHidden =
-                } else
-                    self?.errorLabel.isHidden =
-                    self?.errorLabel.text =
+                self?.errorLabel.text = "ssss"
+                self?.errorLabel.isHidden = isValid
+                print(isValid)
+//                if isValid {
+//                    self?.errorLabel.isHidden = isValid
+//                } else {
+//                    self?.errorLabel.isHidden = !isValid
+//                }
             }
-        
-        
+            .store(in: &cancellables)
     }
-
-
 }
-

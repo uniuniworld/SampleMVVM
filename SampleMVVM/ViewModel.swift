@@ -15,6 +15,7 @@ protocol ViewModelOutput {
 }
 
 
+
 final class ViewModel: ViewModelInput, ViewModelOutput {
     
     private var cancellables = Set<AnyCancellable>()
@@ -22,8 +23,17 @@ final class ViewModel: ViewModelInput, ViewModelOutput {
     // Input
     let inputText = PassthroughSubject<String,  Never>()
     // Output
-    let isValid = PassthroughSubject<Bool, Never>()
+    let isValid = CurrentValueSubject<Bool, Never>(true)
     
     private var errorText: String?
+    
+    
+    func tapButton() {
+        isValid.send(!isValid.value)
+    }
+    
+    func valid() {
+        
+    }
     
 }
